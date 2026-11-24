@@ -1,0 +1,5 @@
+# Crawling is deliberately allowed so that crawlers can fetch the page and read
+# the noindex directive in its <head>. Blocking here would hide that directive,
+# and a linked URL could still be indexed with no description.
+User-agent: *
+Allow: /
